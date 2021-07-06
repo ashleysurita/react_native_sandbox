@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "FinanceTracker",
+    "slug": "FinanceTracker",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "FinanceTracker"
+}
