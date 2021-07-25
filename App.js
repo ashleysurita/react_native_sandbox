@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, Image, ScrollView, TextInput } from "react-native";
+import Cat from "./components/Cat";
 
 const wrapperStyle = ``;
 
@@ -10,7 +11,8 @@ const App = () => {
         padding: 50,
       }}
     >
-      <Text>Some text</Text>
+      <Cat />
+      {/* <Text>Some text</Text>
       <View>
         <Text>Some more text</Text>
         <Image
@@ -27,7 +29,7 @@ const App = () => {
           borderWidth: 1,
         }}
         defaultValue="You can type in me"
-      />
+      /> */}
     </ScrollView>
   );
 };
