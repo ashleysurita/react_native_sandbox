@@ -1,10 +1,14 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, Image, View } from "react-native";
 
 const Cat = (props) => {
   return (
     <View>
       <Text>Hello, I am {props.name}</Text>
+      <Image
+        source={{ uri: "https://reactnative.dev/docs/assets/p_cat1.png" }}
+        style={{ width: 200, height: 200 }}
+      />
     </View>
   );
 };
