@@ -11,7 +11,9 @@ const App = () => {
         padding: 50,
       }}
     >
-      <Cat />
+      <Cat name="Maru" />
+      <Cat name="Grumpy" />
+      <Cat name="Muffin" />
       {/* <Text>Some text</Text>
       <View>
         <Text>Some more text</Text>
