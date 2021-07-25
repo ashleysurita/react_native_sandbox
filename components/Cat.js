@@ -1,13 +1,21 @@
-import React from "react";
-import { Text, Image, View } from "react-native";
+import React, { useState } from "react";
+import { Text, Image, View, Button } from "react-native";
 
 const Cat = (props) => {
+  const [isHungry, setIsHungry] = useState(true);
+
   return (
     <View>
-      <Text>Hello, I am {props.name}</Text>
+      <Text>
+        I am {props.name}, and I am {isHungry ? "hungry" : "full"}!
+      </Text>
       <Image
         source={{ uri: "https://reactnative.dev/docs/assets/p_cat1.png" }}
         style={{ width: 200, height: 200 }}
+      />
+      <Button
+        onPress={() => setIsHungry(!isHungry)}
+        title={isHungry ? "Pour me some milk please!" : "Thank you!"}
       />
     </View>
   );
